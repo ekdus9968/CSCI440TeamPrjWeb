@@ -37,6 +37,8 @@ Writing objects: 100% (5/5), 728 bytes | 728.00 KiB/s, done.
 Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/ekdus9968/Test.git
  * [new branch]      main -> main
+
+
 seyoung@Seyoungui-MacBookPro Test % git checkout -b test01
 Switched to a new branch 'test01'
 seyoung@Seyoungui-MacBookPro Test % git staus
@@ -47,27 +49,8 @@ The most similar command is
 seyoung@Seyoungui-MacBookPro Test % git add . 
 seyoung@Seyoungui-MacBookPro Test % git commit -m"test branch"
 On branch test01
-
-
-
-nothing to commit, working tree clean
-seyoung@Seyoungui-MacBookPro Test % git add
-Nothing specified, nothing added.
-hint: Maybe you wanted to say 'git add .'?
-hint: Turn this message off by running
-hint: "git config advice.addEmptyPathspec false"
-seyoung@Seyoungui-MacBookPro Test % git add .
-seyoung@Seyoungui-MacBookPro Test % git commit -m"test branch"
 [test01 a95d184] test branch
  1 file changed, 2 insertions(+), 1 deletion(-)
-seyoung@Seyoungui-MacBookPro Test % git push
-fatal: The current branch test01 has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin test01
-
-To have this happen automatically for branches without a tracking
-upstream, see 'push.autoSetupRemote' in 'git help config'.
 
 seyoung@Seyoungui-MacBookPro Test % git push origin test01    
 Enumerating objects: 7, done.
