@@ -1,0 +1,85 @@
+Last login: Thu Jan 25 11:23:47 on ttys000
+seyoung@Seyoungui-MacBookPro ~ % git config --global user.name ""
+seyoung@Seyoungui-MacBookPro ~ % git config --global user.email ""
+seyoung@Seyoungui-MacBookPro ~ % git init
+Reinitialized existing Git repository in /Users/seyoung/.git/
+seyoung@Seyoungui-MacBookPro ~ % ls
++			Downloads		git
+
+seyoung@Seyoungui-MacBookPro Test % git init
+Initialized empty Git repository 
+
+seyoung@Seyoungui-MacBookPro Test % ls
+test
+seyoung@Seyoungui-MacBookPro Test % git add .
+seyoung@Seyoungui-MacBookPro Test % git commit -m"Test Commit"
+[main (root-commit) 073b3ac] Test Commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .DS_Store
+ create mode 100644 test/Hello.py
+seyoung@Seyoungui-MacBookPro Test % git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+seyoung@Seyoungui-MacBookPro Test % git remote -v
+seyoung@Seyoungui-MacBookPro Test % git remote add origin https://github.com/ekdus9968/Test.git
+seyoung@Seyoungui-MacBookPro Test % git remote
+origin
+seyoung@Seyoungui-MacBookPro Test % git remote -v
+origin	https://github.com/ekdus9968/Test.git (fetch)
+origin	https://github.com/ekdus9968/Test.git (push)
+s
+seyoung@Seyoungui-MacBookPro Test % git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 728 bytes | 728.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ekdus9968/Test.git
+ * [new branch]      main -> main
+seyoung@Seyoungui-MacBookPro Test % git checkout -b test01
+Switched to a new branch 'test01'
+seyoung@Seyoungui-MacBookPro Test % git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+seyoung@Seyoungui-MacBookPro Test % git add . 
+seyoung@Seyoungui-MacBookPro Test % git commit -m"test branch"
+On branch test01
+
+
+
+nothing to commit, working tree clean
+seyoung@Seyoungui-MacBookPro Test % git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+seyoung@Seyoungui-MacBookPro Test % git add .
+seyoung@Seyoungui-MacBookPro Test % git commit -m"test branch"
+[test01 a95d184] test branch
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+seyoung@Seyoungui-MacBookPro Test % git push
+fatal: The current branch test01 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin test01
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+seyoung@Seyoungui-MacBookPro Test % git push origin test01    
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 347 bytes | 347.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+remote: 
+remote: Create a pull request for 'test01' on GitHub by visiting:
+remote:      https://github.com/ekdus9968/Test/pull/new/test01
+remote: 
+To https://github.com/ekdus9968/Test.git
+ * [new branch]      test01 -> test01
+seyoung@Seyoungui-MacBookPro Test % 
