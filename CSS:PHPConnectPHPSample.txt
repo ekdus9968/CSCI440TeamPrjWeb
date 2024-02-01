@@ -1,0 +1,24 @@
+Last login: Thu Feb  1 11:40:55 on ttys000
+(base) seyoung@Seyoungui-MacBookPro ~ % cat > Test.txt
+<div class = "sub">
+    <form action =“phpfilename.php" method="post">
+        <input type="submit" value="Veiw List">
+    </form>
+    <form action =“htmlfilename.html" method="post">
+        <input type="submit" value="Go back home">
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
