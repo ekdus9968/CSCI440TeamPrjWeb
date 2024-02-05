@@ -1,0 +1,245 @@
+/*
+USE THIS WHEN CHECKING MODIFICATIONS
+
+border:1px solid red;
+*/
+
+
+* {
+  box-sizing: border-box;
+}
+/*Navbar links font and webpage bg color*/
+body {
+  padding: 0em;
+  margin: 0em;
+  background: #fffbda;
+  font-family: "Kanit", serif;
+}
+/*Navbar background colo*/
+h1,h2,h3,h4,h5,h6{
+  font-family: "Candal", serif;
+  color:#2f8dff; /*#ffce49;*/
+  margin:0.2em;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(5, 5, 5, 0.904);/*blog-title color*/
+}
+header {
+  background: #2da3f7;
+  height: 4.2em;
+}
+
+/* Navbar text color*/
+header * {
+  color: #ffe520;
+}
+
+/*JOURNO logo formatting*/
+header .logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+/*JOURNO text cont formatting */
+header .logo-text {
+  margin-top: 9px;
+  font-family: "Candal", serif;
+}
+
+/*Navbar links formatting*/
+header ul {
+  float: right;
+  margin: 0em;
+  padding: 0em;
+  list-style: none;
+}
+
+/*Navbar links cont formatting*/
+header ul li {
+  float: left;
+  position: relative;
+}
+
+/*Hides 'Logged In' Dropdown*/
+header ul li ul {
+  position: absolute;
+  top: 4.2em;
+  right: 0em;
+  width: 9em;
+  display: none;
+  z-index: 69420;/*so that it hovers over trending box*/
+}
+
+/*Shows 'Logged In' Dropdown WHEN hovered*/
+header ul li:hover ul {
+  display: block;
+}
+
+/*Dropdown formatting*/
+header ul li ul li {
+  width: 100%;
+}
+
+/*Dropdown text and bg colors*/
+header ul li ul li a {
+  padding: 0.3em;
+  color: #4fb3fa;
+  background: #ffe3aba2;
+}
+
+/*Dropdown LOGOUT text color*/
+header ul li ul li a.logout {
+  color: #ff694b;
+}
+
+/*Dropdown bg color changes when hovered*/
+header ul li ul li a:hover {
+  background: #fcc326bb;
+}
+
+/*Formats Navbar links*/
+header ul li a {
+  display: block;
+  padding: 1.13em;
+  font-size: 1.1em;
+  text-decoration: none;
+}
+
+/*Changes bg color when hovering on Navbar links*/
+header ul li a:hover {
+  background: #1b86d2;
+  transition: 0.5s;
+}
+
+/*Navbar icon*/
+header .menu-toggle {
+  display: none;
+}
+
+
+.post-wrapper a:hover{
+  color:#2f8dff;
+}
+
+/*Post Slider*/
+.post-slider{
+  position: relative;
+}
+/*Arrow keys-right/left*/
+.post-slider .next{
+position: absolute;
+top: 50%;
+right: 1em;
+font-size: 1.5em;
+color:#2f8dff;
+cursor: pointer; /*shows it's clickable*/
+}
+
+.post-slider .prev{
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  font-size: 1.5em;
+  color:#2f8dff;
+  cursor: pointer;
+  }
+
+.post-slider .slider-title{
+  text-align: center;
+  margin: 0.5em auto;
+}
+
+.post-slider .post-wrapper{
+  width: 87%;
+  height: 25em;
+  margin:0px auto;/*auto means horizontally centralized*/
+  overflow: hidden; /*hides any content beyond red box*/
+  padding: .5em 0em 0.5em 0em;
+}
+
+.post-slider .post-wrapper .post{
+  display:inline-block;
+  height: 20em;/*height for yellow box*/
+  width: 12.5em;
+  margin: 0em 0.2em;
+  background-color:#ffce49;
+  border-radius: 0.8em;
+}
+  /*Title on Posts*/
+  .post-slider .post-wrapper .post .post-info{
+    font-size: .85em;
+    height: 1em;
+    padding:0em 0.1em;
+  }
+
+.post-slider .post-wrapper .post .slider-image{
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 0.8em;
+  border-top-right-radius: 0.8em;
+  box-shadow: 1rem 1rem 1rem -1rem #ffce49;
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width: 704px) {
+  header {
+    position: relative;
+  }
+
+  header ul {
+    width: 100%;
+    background: #2993df;
+    max-height: 0px;
+    overflow: hidden;
+  }
+
+  .showing {
+    max-height: 50em !important;
+  }
+
+  header ul li {
+    width: 100%;
+  }
+
+  header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+  }
+  header ul li ul li a {
+    padding: 0.3em;
+    color: #2993df;
+    background: #fee5b3;
+    padding-left: 50px;
+  }
+
+  header ul li ul li a:hover {
+    background: #ffce49;
+  }
+
+  header ul li ul li a.logout {
+    color: #ff694b;
+  }
+
+  header .menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.5em;
+  }
+
+  header .logo {
+    margin-left: 0.5m;
+  }
+
+  header ul li ul {
+    display: none;
+  }
+
+  header ul li:hover ul {
+    display: block;
+  }
+}

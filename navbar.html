@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!--Font Awesome-->
+  <script src="https://kit.fontawesome.com/11cbfc3390.js" crossorigin="anonymous"></script>
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet" />
+
+  <!--Custom Styling-->
+  <link rel="stylesheet" href="style.css" />
+
+  <title>Journo</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <h1 class="logo-text">Journo</h1>
+    </div>
+    <i class="fa fa-bars menu-toggle"></i>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Profile</a></li>
+      <!--<li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>-->
+      <li>
+        <a href="#">
+          <i class="fa fa-user"></i>
+          Logged In
+          <i class="fa fa-chevron-down" style="font-size: 0.8em"></i></a>
+        <ul>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#" class="logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </header>
+  <!--Page Wrapper-->
+  <div class="page-wrapper"></div>
+  <!--//Carosell-->
+  <div class="post-slider">
+    <h1 class="slider-title">Trending Now</h1>
+    <!--curson button-->
+    <i class="fas fa-chevron-left prev"></i>
+    <i class="fas fa-chevron-right next"></i>
+
+    <div class="post-wrapper">
+
+      <div class="post">
+        <div class="post-info">
+          <img src="./images/pathetic.jpg" alt="should be a cat" class="slider-image">
+          <h4><a href="single.html"> Why Doesn't My CSS Work?</a></h4>
+          <i class="far fa-user">Michael</i>
+          &nbsp;
+          <i class="far fa-calendar">January, 31, 2024</i>
+        </div>
+      </div>
+
+      <div class="post">
+        <div class="post-info">
+          <img src="./images/pathetic.jpg" alt="should be a cat" class="slider-image">
+          <h4><a href="single.html"> Why Doesn't My CSS Work?</a></h4>
+          <i class="far fa-user">Michael</i>
+          &nbsp;
+          <i class="far fa-calendar">January, 31, 2024</i>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-info">
+          <img src="./images/pathetic.jpg" alt="should be a cat" class="slider-image">
+          <h4><a href="single.html"> Why Doesn't My CSS Work?</a></h4>
+          <i class="far fa-user">Michael</i>
+          &nbsp;
+          <i class="far fa-calendar">January, 31, 2024</i>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-info">
+          <img src="./images/wiki.jpg" alt="should be a cat" class="slider-image">
+          <h4><a href="single.html"> When I'm Inconvenienced</a></h4>
+          <i class="far fa-user">Michael</i>
+          &nbsp;
+          <i class="far fa-calendar">January, 31, 2024</i>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!--JQuery NOT WORKING!!!!!!!!!-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!--Slick Carousel-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <!--Custom Script-->
+  <script src="scripts.js"></script>
+</body>
+
+</html>
